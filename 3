@@ -1,0 +1,12 @@
+document.getElementById("check-button").addEventListener("click", function () {
+  const correctAnswer = "ليونيل ميسي"; // الإجابة الصحيحة
+  const userAnswer = document.getElementById("answer-input").value.trim();
+
+  if (userAnswer === correctAnswer) {
+    document.getElementById("result").textContent = "إجابة صحيحة!";
+    document.getElementById("result").style.color = "green";
+  } else {
+    document.getElementById("result").textContent = "إجابة خاطئة، حاول مرة أخرى.";
+    document.getElementById("result").style.color = "red";
+  }
+});
